@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {baseChanged = id; }; 
+            CLASS = HTController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                baseField1 = id; 
+                baseField2 = id; 
+                baseField3 = id; 
+                baseField4 = id; 
+                baseField5 = id; 
+                baseMenu1 = id; 
+                baseMenu2 = id; 
+                baseMenu3 = id; 
+                baseMenu4 = id; 
+                baseMenu5 = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = HTFormatter; LANGUAGE = ObjC; SUPERCLASS = NSFormatter; }
+    ); 
+    IBVersion = 1; 
+}

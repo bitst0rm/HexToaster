@@ -1,0 +1,6 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "HexToaster";
+CFBundleShortVersionString = "0.3";
+CFBundleGetInfoString = "HexToaster version 0.3, Copyright 2004 Jason Kingan";
+NSHumanReadableCopyright = "Copyright 2004-2013 Jason Kingan";

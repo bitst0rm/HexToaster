@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8286B1BF16B3981200221B5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8286B1BE16B3981200221B5A /* Cocoa.framework */; };
+		8286B1C916B3981200221B5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8286B1C716B3981200221B5A /* InfoPlist.strings */; };
+		8286B1CF16B3981200221B5A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8286B1CD16B3981200221B5A /* Credits.rtf */; };
+		8286B1E716B3983F00221B5A /* HTIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8286B1E616B3983F00221B5A /* HTIcon.icns */; };
+		8286B1EC16B3987100221B5A /* HTController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286B1E916B3987100221B5A /* HTController.m */; };
+		8286B1ED16B3987100221B5A /* HTFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286B1EB16B3987100221B5A /* HTFormatter.m */; };
+		8286B1EF16B399FB00221B5A /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8286B1EE16B399FB00221B5A /* libgmp.a */; };
+		8286B1F116B39B4A00221B5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286B1F016B39B4A00221B5A /* main.m */; };
+		8286B1F416B39B8D00221B5A /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8286B1F216B39B8D00221B5A /* MainMenu.nib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8286B1BA16B3981200221B5A /* HexToaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexToaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8286B1BE16B3981200221B5A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8286B1C116B3981200221B5A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8286B1C216B3981200221B5A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8286B1C316B3981200221B5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8286B1C616B3981200221B5A /* HexToaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HexToaster-Info.plist"; sourceTree = "<group>"; };
+		8286B1C816B3981200221B5A /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8286B1CC16B3981200221B5A /* HexToaster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexToaster-Prefix.pch"; sourceTree = "<group>"; };
+		8286B1CE16B3981200221B5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8286B1E616B3983F00221B5A /* HTIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = HTIcon.icns; path = ../HTIcon.icns; sourceTree = "<group>"; };
+		8286B1E816B3987100221B5A /* HTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTController.h; sourceTree = "<group>"; };
+		8286B1E916B3987100221B5A /* HTController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTController.m; sourceTree = "<group>"; };
+		8286B1EA16B3987100221B5A /* HTFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFormatter.h; sourceTree = "<group>"; };
+		8286B1EB16B3987100221B5A /* HTFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFormatter.m; sourceTree = "<group>"; };
+		8286B1EE16B399FB00221B5A /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = /opt/local/lib/libgmp.a; sourceTree = "<absolute>"; };
+		8286B1F016B39B4A00221B5A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8286B1F316B39B8D00221B5A /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/MainMenu.nib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8286B1B716B3981200221B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8286B1EF16B399FB00221B5A /* libgmp.a in Frameworks */,
+				8286B1BF16B3981200221B5A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8286B1AF16B3981200221B5A = {
+			isa = PBXGroup;
+			children = (
+				8286B1C416B3981200221B5A /* HexToaster */,
+				8286B1BD16B3981200221B5A /* Frameworks */,
+				8286B1BB16B3981200221B5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8286B1BB16B3981200221B5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8286B1BA16B3981200221B5A /* HexToaster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8286B1BD16B3981200221B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8286B1EE16B399FB00221B5A /* libgmp.a */,
+				8286B1BE16B3981200221B5A /* Cocoa.framework */,
+				8286B1C016B3981200221B5A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8286B1C016B3981200221B5A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8286B1C116B3981200221B5A /* AppKit.framework */,
+				8286B1C216B3981200221B5A /* CoreData.framework */,
+				8286B1C316B3981200221B5A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8286B1C416B3981200221B5A /* HexToaster */ = {
+			isa = PBXGroup;
+			children = (
+				8286B1C516B3981200221B5A /* Supporting Files */,
+			);
+			path = HexToaster;
+			sourceTree = "<group>";
+		};
+		8286B1C516B3981200221B5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8286B1F216B39B8D00221B5A /* MainMenu.nib */,
+				8286B1F016B39B4A00221B5A /* main.m */,
+				8286B1E816B3987100221B5A /* HTController.h */,
+				8286B1E916B3987100221B5A /* HTController.m */,
+				8286B1EA16B3987100221B5A /* HTFormatter.h */,
+				8286B1EB16B3987100221B5A /* HTFormatter.m */,
+				8286B1C616B3981200221B5A /* HexToaster-Info.plist */,
+				8286B1C716B3981200221B5A /* InfoPlist.strings */,
+				8286B1CC16B3981200221B5A /* HexToaster-Prefix.pch */,
+				8286B1E616B3983F00221B5A /* HTIcon.icns */,
+				8286B1CD16B3981200221B5A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8286B1B916B3981200221B5A /* HexToaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8286B1D816B3981200221B5A /* Build configuration list for PBXNativeTarget "HexToaster" */;
+			buildPhases = (
+				8286B1B616B3981200221B5A /* Sources */,
+				8286B1B716B3981200221B5A /* Frameworks */,
+				8286B1B816B3981200221B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HexToaster;
+			productName = HexToaster;
+			productReference = 8286B1BA16B3981200221B5A /* HexToaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8286B1B116B3981200221B5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Toast442.org;
+			};
+			buildConfigurationList = 8286B1B416B3981200221B5A /* Build configuration list for PBXProject "HexToaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8286B1AF16B3981200221B5A;
+			productRefGroup = 8286B1BB16B3981200221B5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8286B1B916B3981200221B5A /* HexToaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8286B1B816B3981200221B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8286B1C916B3981200221B5A /* InfoPlist.strings in Resources */,
+				8286B1CF16B3981200221B5A /* Credits.rtf in Resources */,
+				8286B1E716B3983F00221B5A /* HTIcon.icns in Resources */,
+				8286B1F416B39B8D00221B5A /* MainMenu.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8286B1B616B3981200221B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8286B1EC16B3987100221B5A /* HTController.m in Sources */,
+				8286B1ED16B3987100221B5A /* HTFormatter.m in Sources */,
+				8286B1F116B39B4A00221B5A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8286B1C716B3981200221B5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8286B1C816B3981200221B5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8286B1CD16B3981200221B5A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8286B1CE16B3981200221B5A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8286B1F216B39B8D00221B5A /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8286B1F316B39B8D00221B5A /* en */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8286B1D616B3981200221B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8286B1D716B3981200221B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8286B1D916B3981200221B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HexToaster/HexToaster-Prefix.pch";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "HexToaster/HexToaster-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8286B1DA16B3981200221B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HexToaster/HexToaster-Prefix.pch";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "HexToaster/HexToaster-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8286B1B416B3981200221B5A /* Build configuration list for PBXProject "HexToaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8286B1D616B3981200221B5A /* Debug */,
+				8286B1D716B3981200221B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8286B1D816B3981200221B5A /* Build configuration list for PBXNativeTarget "HexToaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8286B1D916B3981200221B5A /* Debug */,
+				8286B1DA16B3981200221B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8286B1B116B3981200221B5A /* Project object */;
+}
