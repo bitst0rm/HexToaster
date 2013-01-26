@@ -4,7 +4,7 @@
    Copyright (C) 2004 Jason Kingan
       jasonk@toast442.org
 
-	http://www.toast442.org/hextoaster
+        http://www.toast442.org/hextoaster
 
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License as
@@ -22,7 +22,7 @@
    02111-1307, USA.
 
    The GNU General Public License is contained in the file COPYING.
-*/
+ */
 
 /* HTController */
 
@@ -30,13 +30,13 @@
 
 @interface HTController : NSObject
 {
- 	NSMutableArray * fieldArray;
-	NSMutableArray * menuArray;
-	NSMutableArray * formatterArray;
+    NSMutableArray * fieldArray;
+    NSMutableArray * menuArray;
+    NSMutableArray * formatterArray;
 
-	NSUserDefaults * prefs;
-	
-	IBOutlet id baseField1;
+    NSUserDefaults * prefs;
+
+    IBOutlet id baseField1;
     IBOutlet id baseField2;
     IBOutlet id baseField3;
     IBOutlet id baseField4;
@@ -47,12 +47,12 @@
     IBOutlet id baseMenu4;
     IBOutlet id baseMenu5;
 }
-- (NSString *)convertToBase:(int)newBase fromBase:(int)oldBase  usingText:(NSString *)text;
-- (IBAction)baseChanged:(id)sender;
-- (id) init;
-- (void)awakeFromNib;
-- (void)dealloc;
-- (void)controlTextDidChange:(NSNotification *)aNotification;
-- (void)windowWillClose:(NSNotification *)aNotification;
+-(NSString *)convertToBase:(int)newBase fromBase:(int)oldBase usingText:(NSString *)text;
+-(IBAction)baseChanged:(id)sender;
+-(id)init;
+-(void)awakeFromNib;
+-(void)dealloc;
+-(void)controlTextDidChange:(NSNotification *)aNotification;
+-(void)windowWillClose:(NSNotification *)aNotification;
 
 @end

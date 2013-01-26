@@ -4,7 +4,7 @@
    Copyright (C) 2004 Jason Kingan
       jasonk@toast442.org
 
-	http://www.toast442.org/hextoaster
+        http://www.toast442.org/hextoaster
 
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License as
@@ -22,57 +22,59 @@
    02111-1307, USA.
 
    The GNU General Public License is contained in the file COPYING.
-*/
+ */
 
 #import "HTFormatter.h"
 
-#define HT_NORMALIZE(_x) (( _x >= '0' && _x <= '9' ) ? _x-'0' : (( _x >= 'a' && _x <= 'z') ? _x-'a'+10 : 40))
+#define HT_NORMALIZE(_x) ((_x >= '0' && _x <= '9') ? _x - '0' : ((_x >= 'a' && _x <= 'z') ? _x - 'a' + 10 : 40))
 
 @implementation HTFormatter
-- (NSString *)stringForObjectValue:(id)anObject
+-(NSString *)stringForObjectValue:(id)anObject
 {
-	return anObject;
+    return anObject;
 }
 
-- (void)setBase:(int) base
+-(void)setBase:(int)base
 {
-	m_Base = base;
+    m_Base = base;
 }
 
-- (int)getBase
+-(int)getBase
 {
-	return m_Base;
+    return m_Base;
 }
 
-- (BOOL)isPartialStringValid:(NSString *)partialString newEditingString:(NSString**)newString 
-	errorDescription:(NSString **)error
+-(BOOL)isPartialStringValid:(NSString *)partialString newEditingString:(NSString **)newString
+   errorDescription:(NSString **)error
 {
-	const char * buf;
-	size_t length;
-	int i;
-	
-	buf = [ partialString cStringUsingEncoding:NSASCIIStringEncoding ];
-	
-	length = strlen(buf);
-	
-	for(i=0; i < length; i++) {
-		if(m_Base != 1) {
-			if(HT_NORMALIZE(buf[i]) > m_Base-1)
-				return NO;
-		} else {
-			if(buf[i] & 0x80)
-				return NO;
-		}
-	}
-	
-	return YES;
+    const char * buf;
+    size_t length;
+    int i;
+
+    buf = [partialString cStringUsingEncoding:NSASCIIStringEncoding];
+
+    length = strlen(buf);
+
+    for(i = 0; i < length; i++) {
+        if(m_Base != 1) {
+            if(HT_NORMALIZE(buf[i]) > m_Base - 1) {
+                return NO;
+            }
+        } else {
+            if(buf[i] & 0x80) {
+                return NO;
+            }
+        }
+    }
+
+    return YES;
 }
 
-- (BOOL)getObjectValue:(id *)anObject forString:(NSString *)string 
-	errorDescription:(NSString **)error
+-(BOOL)getObjectValue:(id *)anObject forString:(NSString *)string
+   errorDescription:(NSString **)error
 {
-	*anObject = string;
-	return YES;
+    *anObject = string;
+    return YES;
 }
 
 

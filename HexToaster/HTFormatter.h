@@ -4,7 +4,7 @@
    Copyright (C) 2004 Jason Kingan
       jasonk@toast442.org
 
-	http://www.toast442.org/hextoaster
+        http://www.toast442.org/hextoaster
 
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License as
@@ -22,7 +22,7 @@
    02111-1307, USA.
 
    The GNU General Public License is contained in the file COPYING.
-*/
+ */
 
 /* HTFormatter */
 
@@ -30,12 +30,12 @@
 
 @interface HTFormatter : NSFormatter
 {
-	int m_Base;
+    int m_Base;
 }
-- (void)setBase:(int) base;
-- (int)getBase;
-- (NSString *)stringForObjectValue:(id)anObject;
-- (BOOL)getObjectValue:(id *)anObject forString:(NSString *)string errorDescription:(NSString **)error;
-- (BOOL)isPartialStringValid:(NSString *)partialString newEditingString:(NSString**)newString errorDescription:(NSString **)error;
+-(void)setBase:(int)base;
+-(int)getBase;
+-(NSString *)stringForObjectValue:(id)anObject;
+-(BOOL)getObjectValue:(id *)anObject forString:(NSString *)string errorDescription:(NSString **)error;
+-(BOOL)isPartialStringValid:(NSString *)partialString newEditingString:(NSString **)newString errorDescription:(NSString **)error;
 
 @end
